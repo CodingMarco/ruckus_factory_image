@@ -67,7 +67,7 @@ def main():
     header[0x2A] = header_checksum >> 8
     header[0x2B] = header_checksum & 0xFF
 
-    with open("ruckus_fw.bin", "wb") as f:
+    with open("factory.bin", "wb") as f:
         f.write(header)
         f.write(data)
 
